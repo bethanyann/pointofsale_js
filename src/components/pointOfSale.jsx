@@ -1,23 +1,29 @@
 import React, { Component } from 'react';
 import Order from '../components/order';
 import Menu from '../components/menu';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+//refactor the bootstrap component import statements
 class PointOfSale extends Component {
     state = {  }
     render() { 
         return ( 
-            <div >
-                <main className="container-fluid">
-                    <div className="row">
-                        <div className="col-sm-8">
-                            <Menu />
-                        </div>
-                        <div className="col-sm-4">
+              <Container fluid>
+                    <Row>
+                        <Col sm={4} style={{backgroundColor:"chartreuse"}}>
                             <Order />
-                        </div>
-                    </div>
-                   
-                </main>
-            </div>
+                            here's the order section
+                        </Col>  
+                        <Col sm={8} style={{ backgroundColor:"blueviolet"}}>
+                            <Menu />
+                            here's the menu section
+                        </Col>
+                                       
+                    </Row>  
+           
+               </Container>                    
         );
     }
 }

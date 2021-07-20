@@ -7,7 +7,7 @@ const ListGroup = ({ items, onItemSelect, textProperty, valueProperty, selectedI
 
    return (
         <ul className="list-group list-group-horizontal clickable" style={{flexDirection:"row", marginTop: 20}} >
-            {items.map(category(
+            {items.map(category =>(
                     <li className={ category === selectedItem ? "list-group-item active" : "list-group-item"} 
                      style={{marginRight: 20, marginBottom: 20}} 
                      key={category[valueProperty]} 
