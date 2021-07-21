@@ -46,7 +46,7 @@ class Menu extends Component {
         } = this.state;
 
       //here is where we will filter the products based on selected category
-      const filteredProducts = selectedCategory && selectedCategory._id ? products.filter(m => m.category._id === selectedCategory._id) : allProducts;
+      const filteredProducts = selectedCategory && selectedCategory._id ? products.filter(m => m.category._id === selectedCategory._id) : products;
       
       //return filtered products
       return {totalProductCount: filteredProducts.length, data: filteredProducts};

@@ -34,7 +34,7 @@ const products = [
       return products;
     }
     
-    export function getProducts(id) {
+    export function getProduct(id) {
       return products.find(m => m._id === id);
     }
     
