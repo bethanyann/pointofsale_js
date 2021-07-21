@@ -1,52 +1,15 @@
 import React, { Component } from 'react';
-import { getCategories } from '../services/fakeCategoryService';
 import Category from './category';
-import { getProducts } from '../services/fakeProductService';
 //import ListGroup from './common/listGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ListGroupItem from 'react-bootstrap/ListGroupItem';
 
 class CategoryList extends Component {
-    state = {  
-        categories:[],
-        products:[],
-        sortOrder: { path: 'name', order: 'asc'},
-        selectedCategory: undefined
-    }
-
-    //might not actually need this here
-    constructor(props)
-    {
-        super(props);
-    }
-
-    componentDidMount() {
-        const categories = [{ _id:"", name:"All Items"}, ...getCategories()] //first item in the list is 'all items' followed by the array returned from getCategories()
-
-        this.setState({products: getProducts(), categories: categories });
-        console.log(categories);
-    }
-
-    //event handlers
-    handleCategorySelect= (category) => {
-        this.setState({ selectedCategory: category })
-    } 
-
-    getPageData = () => {
-        //this will filter the products based on selected category, where to put this??? 
-    //     const{ categories: allCategories, selectedCategory } = this.state;
-    //    //if there is a category selected and it has an id (not the 'all categories' option) then filter on category
-    //     const filteredCategories = selectedCategory && selectedCategory._id ?  
-
-    //     return {totalCount: allCategories.length, data: }
-    }
-
-
 
     render() { 
 
-        const {categories, selectedCategory} = this.state;
-        
+        const {items : categories, selectedItem, onItemSelect} = this.props;
+        console.log(categories);
         
         //might have to make the list group into a button if I want an image on it. leaving images off for now 
         return ( 
@@ -54,8 +17,8 @@ class CategoryList extends Component {
                 {categories.map((category) => (
                     <ListGroupItem style={{ paddingTop: '30px', paddingBottom: '30px', textAlign:'center' }}  
                         action 
-                        key={category['_id']}
-                        onClick={() => this.props.onItemSelect(category)}>
+                        key={category._id}
+                        onClick={() => onItemSelect(category)}>
                             {category['name']}
                     </ListGroupItem>
                 ))}
