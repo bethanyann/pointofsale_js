@@ -1,6 +1,6 @@
 export const genres = [
     { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
-    { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Salad & Soup" },
+    { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
     { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
     { _id: "a08dab52706141b39abedc84280589ec", name: "Classics" },

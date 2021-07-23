@@ -18,7 +18,7 @@ class PointOfSale extends Component {
                         </Col>  
                         <Col sm={8} style={{ backgroundColor:"blueviolet"}}>
                             <Menu />
-                            here's the menu section
+                            
                         </Col>
                                        
                     </Row>  

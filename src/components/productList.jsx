@@ -1,9 +1,26 @@
 import React, { Component } from 'react';
-
+import Product  from '../components/product';
 class ProductList extends Component {
-    state = {  }
+    //state = {  }
+  
+
     render() { 
-        return ( null );
+        const {products, onItemSelect} = this.props;
+
+        console.log(products);
+        //return (null);
+        return ( 
+            <div>
+                {products.map((product) => (
+                    <Product
+                    style={{display: "inline"}}
+                    key={product._id}
+                    data={product}
+                    onItemSelect={onItemSelect} />
+                ))}
+                
+            </div>
+         );
     }
 }
  

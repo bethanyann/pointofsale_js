@@ -38,6 +38,7 @@ class Menu extends Component {
         //might just have a scrolling component instead of swapping pages 
     }
 
+    handleProductSelect
     //get data for the page loaded
     getProductData = () => {
         const {
@@ -70,7 +71,9 @@ class Menu extends Component {
                 <Row>
                     <p>{totalProductCount} products in this category</p>
                     <ProductList 
+                        style={{height: 300}}
                         products={data}
+                        onItemSelect={this.handleProductSelect}//have the slide menu come out display selected product
                     />
                 </Row>
             </div>
