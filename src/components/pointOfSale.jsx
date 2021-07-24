@@ -11,7 +11,7 @@ class PointOfSale extends Component {
     render() { 
         return ( 
               <Container fluid>
-                    <Row>
+                    <Row style={{height: "600px"}}>
                         <Col sm={4} style={{backgroundColor:"chartreuse"}}>
                             <Order />
                             here's the order section

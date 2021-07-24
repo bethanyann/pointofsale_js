@@ -13,7 +13,8 @@ class Menu extends Component {
         categories:[],
         products:[],
         sortOrder: { path: 'name', order: 'asc'},
-        selectedCategory:{}
+        selectedCategory:{},
+        productDetailsVisible: false
      }
 
     componentDidMount() {
@@ -38,7 +39,14 @@ class Menu extends Component {
         //might just have a scrolling component instead of swapping pages 
     }
 
-    handleProductSelect
+    handleProductSelect = (product) => {
+            console.log("this product was clicked on:" + JSON.stringify(product));
+
+            //toggle the product menu here
+            this.setState({productDetailsVisible : !this.state.productDetailsVisible});
+    }
+
+
     //get data for the page loaded
     getProductData = () => {
         const {
@@ -49,6 +57,7 @@ class Menu extends Component {
       //here is where we will filter the products based on selected category
       const filteredProducts = selectedCategory && selectedCategory._id ? products.filter(m => m.category._id === selectedCategory._id) : products;
       
+      console.log('filtered products:' + filteredProducts);
       //return filtered products
       return {totalProductCount: filteredProducts.length, data: filteredProducts};
     }

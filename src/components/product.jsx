@@ -2,31 +2,29 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 
 const Product = (props) => {
-        const{data: product} = props;
+        const{data: product, onItemSelect} = props;
         return ( 
-        //    <Card>
-        //         <Card.Header>
-
-        //         </Card.Header>
-        //         <Card.Body> 
-                   
-        //             <Card.Link className="stretched-link">
-        //                 {product.name}
-        //             </Card.Link>
-        //         </Card.Body>
-        //    </Card>
+           <Card style={{width: "15rem", height:"", transform:"rotate(0)", margin:"5px"}}>
+               <Card.Img variant="top" src={product.image} className="justify-content-center" />
+                <Card.Body> 
+                    <Card.Title>{product.name}</Card.Title>
+                    <a href="#" onClick={() => onItemSelect(product)} className="stretched-link">
+                        {product.description}
+                    </a>
+                </Card.Body>
+           </Card>
                
         //turn this into react components eventually
            
-        <div className="card" style={{width: "18rem", transform:"rotate(0)"}}>
-            <img src="..." className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <h5 className="card-title">Card with stretched links</h5>
-                    <p className="card-text bg-light">
-                    This <a href="#" className="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
-                    </p>
-                </div>
-        </div>
+        // <div className="card" style={{width: "15rem", transform:"rotate(0)"}}>
+        //     <img src="..." className="card-img-top" alt="..."/>
+        //         <div className="card-body">
+        //             <h5 className="card-title">{product.name}</h5>
+        //             <p className="card-text bg-light">
+        //             This <a href="#" className="text-warning stretched-link">stretched link</a> will only be spread over the <code>p</code>-tag, because a transform is applied to it.
+        //             </p>
+        //         </div>
+        // </div>
             
          );
 

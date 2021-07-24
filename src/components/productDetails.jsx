@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+
+//this is going to be my 'slide out menu' from the tutorial, 'menu' will be the 'menu container' for it
+
 class ProductDetails extends Component {
     state = {  }
     render() { 
