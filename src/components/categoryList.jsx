@@ -9,7 +9,7 @@ class CategoryList extends Component {
     render() { 
 
         const {items : categories, selectedItem, onItemSelect} = this.props;
-        console.log(categories);
+        //console.log(categories);
         
         //might have to make the list group into a button if I want an image on it. leaving images off for now 
         return ( 

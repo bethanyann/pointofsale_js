@@ -4,10 +4,10 @@ import Card from 'react-bootstrap/Card';
 const Product = (props) => {
         const{data: product, onItemSelect} = props;
         return ( 
-           <Card style={{width: "15rem", height:"", transform:"rotate(0)", margin:"5px"}}>
+           <Card style={{width: "15rem", height:"5rem", transform:"rotate(0)", margin:"5px"}}>
                <Card.Img variant="top" src={product.image} className="justify-content-center" />
                 <Card.Body> 
-                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Title className="text-center">{product.name}</Card.Title>
                     <a href="#" onClick={() => onItemSelect(product)} className="stretched-link">
                         {product.description}
                     </a>

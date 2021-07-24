@@ -5,6 +5,7 @@ import CategoryList from '../components/categoryList';
 import Row from 'react-bootstrap/Row';
 import { getCategories } from '../services/fakeCategoryService';
 import { getProducts } from '../services/fakeProductService';
+import ProductDetails from '../components/productDetails';
 
  //will contain the right half of the pos system, with the categories on top and the products on the bottom
  //this will be == to the movies component that brings all of the other child componenets together. I think. 
@@ -29,7 +30,7 @@ class Menu extends Component {
     handleCategorySelect = (category) => {
         //take the chosen category and filter the products and then update the products component
         //this.setState({selectedCategory: category, currentPage: 1})
-        console.log('category selected: ' + category + 'category id: ' + category._id)
+        //console.log('category selected: ' + category + 'category id: ' + category._id)
         this.setState({ selectedCategory: category })
 
         //console.log('selected category: ' + this.state.selectedCategory);
@@ -57,7 +58,7 @@ class Menu extends Component {
       //here is where we will filter the products based on selected category
       const filteredProducts = selectedCategory && selectedCategory._id ? products.filter(m => m.category._id === selectedCategory._id) : products;
       
-      console.log('filtered products:' + filteredProducts);
+      //console.log('filtered products:' + filteredProducts);
       //return filtered products
       return {totalProductCount: filteredProducts.length, data: filteredProducts};
     }
@@ -84,6 +85,7 @@ class Menu extends Component {
                         products={data}
                         onItemSelect={this.handleProductSelect}//have the slide menu come out display selected product
                     />
+                    <ProductDetails></ProductDetails>
                 </Row>
             </div>
          );

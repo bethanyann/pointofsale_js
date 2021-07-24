@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Product  from '../components/product';
 //import Column from 'react-bootstrap/CardColumns'
-
-import CardGroup from 'react-bootstrap/CardGroup';
+//import CardGroup from 'react-bootstrap/CardGroup';
 import Row from 'react-bootstrap/Row';
 
 class ProductList extends Component {
@@ -12,7 +11,7 @@ class ProductList extends Component {
     render() { 
         const {products, onItemSelect} = this.props;
 
-        console.log(products);
+        //console.log(products);
         //return (null);
         return ( 
             //take 'justify-content-center' off if i don't want the cards centered anymore and want 
