@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 //this is going to be my 'slide out menu' from the tutorial, 'menu' will be the 'menu container' for it
 //need css classes for this too
 class ProductDetails extends Component {
-    state = {  }
+    
 
     render() { 
-        return ( null );
+        const {visible, selectedProduct} = this.props;
+
+        let visibility = visible ? "show" : "hide";
+
+        console.log("visible? " + visibility);
+        return (
+            <div id="flyoutMenu"
+            className={visibility}>
+                <Row>
+                    <Col sm={4} style={{backgroundColor:"chartreuse"}}>
+                    
+                    </Col>
+                    <Col>
+                    </Col>
+                </Row>
+                <h2>selectedproductgoeshere</h2>
+            </div>
+         );
     }
 }
  

@@ -15,7 +15,8 @@ class Menu extends Component {
         products:[],
         sortOrder: { path: 'name', order: 'asc'},
         selectedCategory:{},
-        productDetailsVisible: false
+        productDetailsVisible: false,
+        selectedProduct: undefined
      }
 
     componentDidMount() {
@@ -44,7 +45,7 @@ class Menu extends Component {
             console.log("this product was clicked on:" + JSON.stringify(product));
 
             //toggle the product menu here
-            this.setState({productDetailsVisible : !this.state.productDetailsVisible});
+            this.setState({productDetailsVisible : !this.state.productDetailsVisible, selectedProduct : product});
     }
 
 
@@ -85,7 +86,10 @@ class Menu extends Component {
                         products={data}
                         onItemSelect={this.handleProductSelect}//have the slide menu come out display selected product
                     />
-                    <ProductDetails></ProductDetails>
+                    <ProductDetails
+                        visible={this.state.productDetailsVisible}
+                        selectedProduct={this.state.selectedProduct}>
+                    </ProductDetails>
                 </Row>
             </div>
          );

@@ -16,7 +16,7 @@ class PointOfSale extends Component {
                             <Order />
                             here's the order section
                         </Col>  
-                        <Col sm={8} style={{ backgroundColor:"blueviolet"}}>
+                        <Col sm={8} style={{ backgroundColor:"blueviolet", height:"800px"}}>
                             <Menu />
                             
                         </Col>
