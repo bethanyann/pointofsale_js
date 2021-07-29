@@ -16,14 +16,15 @@ class ProductDetails extends Component {
         return (
             <div id="flyoutMenu"
             className={visibility}>
-                <Row>
-                    <Col sm={4} style={{backgroundColor:"chartreuse"}}>
-                    
+               
+                {/* <Row>
+                    <Col sm={4} style={{backgroundColor:"white"}}>
+                      <h2>selectedproductgoeshere</h2>
                     </Col>
-                    <Col>
+                    <Col sm={4} className="transparentBackground">
                     </Col>
-                </Row>
-                <h2>selectedproductgoeshere</h2>
+                </Row> */}
+              
             </div>
          );
     }
