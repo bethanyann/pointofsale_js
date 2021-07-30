@@ -8,22 +8,24 @@ class ProductDetails extends Component {
     
 
     render() { 
-        const {visible, selectedProduct} = this.props;
+        const {visible, ...selectedProduct} = this.props;
 
         let visibility = visible ? "show" : "hide";
 
         console.log("visible? " + visibility);
+        console.log(selectedProduct);
         return (
             <div id="flyoutMenu"
             className={visibility}>
                
-                {/* <Row>
-                    <Col sm={4} style={{backgroundColor:"white"}}>
-                      <h2>selectedproductgoeshere</h2>
+                <Row>
+                    {/* <Col sm={4} style={{backgroundColor:"white"}}> */}
+                      {/* <h2>selectedproductgoeshere</h2>
+                    </Col> */}
+                    <Col sm={4}>
+                       <p>{JSON.stringify(selectedProduct)}</p> 
                     </Col>
-                    <Col sm={4} className="transparentBackground">
-                    </Col>
-                </Row> */}
+                </Row>
               
             </div>
          );

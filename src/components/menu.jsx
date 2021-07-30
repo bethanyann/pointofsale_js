@@ -79,8 +79,8 @@ class Menu extends Component {
                         onItemSelect={this.handleCategorySelect} 
                     /> 
                 </Row>
-                <Row>
-                    <p>{totalProductCount} products in this category</p>
+                <Row style={{marginTop: "30px"}}>
+                    {/* <p>{totalProductCount} products in this category</p> */}
                     <ProductList 
                         style={{height: 300}}
                         products={data}
