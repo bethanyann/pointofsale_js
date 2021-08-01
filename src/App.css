@@ -39,14 +39,14 @@
 
 #flyoutMenu {
   width: 40vw;
-  height: 62vh;
+  height: 800px;
   background-color: #FFE600;
   position: fixed;
   top: 0;
   /*left: 0;*/
   right: 0;
-  transition: transform .5s
-              cubic-bezier(0, .52, 0, 1);
+  transition: transform .75s
+              cubic-bezier(0, 0, 0.5, 1);
   /*overflow: scroll;*/
   z-index: 1000;
 }

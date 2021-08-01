@@ -16,6 +16,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 6.99, 
+      image: ""
     },
     {
       _id: "c87b92f085fb4b199e4bfa365dfd8542",
@@ -23,6 +24,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 9.99, 
+      image: ""
     },
     {
       _id: "1136a1bfdfe04edb99161cc1a0318579",
@@ -30,6 +32,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 8.99, 
+      image: ""
     },
     {
       _id: "feba61aa7a4543958e4b3e53aee3c432",
@@ -37,6 +40,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 6.99, 
+      image: ""
     },
     {
       _id: "a7d6de92d91542a3a05601de2172552e",
@@ -44,6 +48,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 6.29, 
+      image: ""
     },
     {
       _id: "4f6320760b1149b8aa6fded8834f95bc",
@@ -51,6 +56,7 @@ const products = [
       description: "",
       category: { _id: "7b5383399b3345509667a892aa70d0d3", name: "Appetizers" },
       price: 6.29, 
+      image: ""
     },
 //SALAD & SOUP
     {
@@ -59,6 +65,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 8.59,
+      image: ""
     },
     {
       _id: "2e7de602c6dd4af1b7cb8f1f8b5f990e",
@@ -66,6 +73,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 8.59,
+      image: ""
     },
     {
       _id: "09b9ac40bcba47878717b30087a351bb",
@@ -73,6 +81,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 13.49,
+      image: ""
     },
     {
       _id: "84a538fd91714158ae1c10d0fec48cfd",
@@ -80,6 +89,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 9.49,
+      image: ""
     },
     {
       _id: "8fbf9e22e3e5401ca10820df15906dce",
@@ -87,6 +97,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 4.89,
+      image: ""
     },
     {
       _id: "4c6674b482f544cea8f6fc6b92d83de8",
@@ -94,6 +105,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 4.89,
+      image: ""
     },
     {
       _id: "b3e9dc96a4854ea79ffeff4d307e0f16",
@@ -101,6 +113,7 @@ const products = [
       description: "",
       category: { _id: "c9dfd829e15c4c388596a2b3886fe300", name: "Soup & Salad" },
       price: 4.89,
+      image: ""
     },
 //SANDWICHES
     {
@@ -109,6 +122,7 @@ const products = [
       description: "",
       category: { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
       price: 11.69,
+      image: ""
     },
     {
       _id: "86724586ad5f4c6582be50e27b588ddf",
@@ -116,6 +130,7 @@ const products = [
       description: "",
       category: { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
       price: 9.99,
+      image: ""
     },
     {
       _id: "98b0caf073e54f679a08d695a5300c9c",
@@ -123,6 +138,7 @@ const products = [
       description: "",
       category: { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
       price: 10.59,
+      image: ""
     },
     {
       _id: "1828f165819f445a9642b97d71fa4064",
@@ -130,6 +146,7 @@ const products = [
       description: "",
       category: { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
       price: 9.69,
+      image: ""
     },
     {
       _id: "8a9f8f1b6b214b61bae1f6311916854a",
@@ -137,6 +154,7 @@ const products = [
       description: "",
       category: { _id: "1ad4e872a7f74541a0414d0f44586bc7", name: "Sandwiches" },
       price: 9.89,
+      image: ""
     },
 //BURGERS
   {
@@ -145,6 +163,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 9.99,
+    image: ""
   },
   {
     _id: "bb11f78eba1b4070a5aa85d195f10d76",
@@ -152,6 +171,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.99,
+    image: ""
   },
   {
     _id: "5ef45396d8314b269d7b93b187dd89a9",
@@ -159,6 +179,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.99,
+    image: ""
   },
   {
     _id: "1f6b6306653b4e498d903977fc15729e",
@@ -166,6 +187,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 11.49,
+    image: ""
   },
   {
     _id: "a7dcfc2ef4fe4f1695a46f63566e663a",
@@ -173,6 +195,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 12.49,
+    image: ""
   },
   {
     _id: "ed1791dd61ed42f28ea58ea1af5d1a9a",
@@ -180,6 +203,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.99,
+    image: ""
   },
   {
     _id: "e1c19b178e5448e18f043e2746b611f4",
@@ -187,6 +211,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 9.89,
+    image: ""
   },
   {
     _id: "32a2f9db09b6401784cf9e1e59a1e9b3",
@@ -194,6 +219,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.29,
+    image: ""
   },
   {
     _id: "a1014ea89fe7422183beeac7854f1c0d",
@@ -201,6 +227,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.49,
+    image: ""
   },
   {
     _id: "2b734a64cab848829a22e4b8b2ee260b",
@@ -208,6 +235,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 9.89,
+    image: ""
   },
   {
     _id: "7010b6d030c242d9b79c8d5c5b41028f",
@@ -215,6 +243,7 @@ const products = [
     description: "",
     category: { _id: "6cd6c15065894be6a6a8e4874db48c79", name: "Burgers" },
     price: 10.49,
+    image: ""
   },
 //CLASSICS
   {
@@ -223,6 +252,7 @@ const products = [
     description: "",
     category: { _id: "a08dab52706141b39abedc84280589ec", name: "Classics" },
     price: 12.49,
+    image: ""
   },
   {
     _id: "844a3b2fbffa4c2aa00b93b08dfb6f7f",
@@ -230,6 +260,7 @@ const products = [
     description: "",
     category: { _id: "a08dab52706141b39abedc84280589ec", name: "Classics" },
     price: 9.89,
+    image: ""
   },
   {
     _id: "625aebdda80343d1b52c346ebb08a8aa",
@@ -237,6 +268,7 @@ const products = [
     description: "",
     category: { _id: "a08dab52706141b39abedc84280589ec", name: "Classics" },
     price: 14.99,
+    image: ""
   },
   {
     _id: "25f4ad19659743019956d04888ed5b86",
@@ -244,6 +276,7 @@ const products = [
     description: "",
     category: { _id: "a08dab52706141b39abedc84280589ec", name: "Classics" },
     price: 17.29,
+    image: ""
   },
 //SIDES
   {
@@ -252,6 +285,7 @@ const products = [
     description: "",
     category: { _id: "4fe664d44c7c40b59b0008cca3b7c87b", name: "Sides" },
     price: 1.59,
+    image: ""
   },
   {
     _id: "b07c6d2b73f74795b748e9bdadef3233",
@@ -259,6 +293,7 @@ const products = [
     description: "",
     category: { _id: "4fe664d44c7c40b59b0008cca3b7c87b", name: "Sides" },
     price: 2.29,
+    image: ""
   },
   {
     _id: "96b4244dca6d408c954905a82ae1bd1d",
@@ -266,6 +301,7 @@ const products = [
     description: "",
     category: { _id: "4fe664d44c7c40b59b0008cca3b7c87b", name: "Sides" },
     price: 2.29,
+    image: ""
   },
 
 //DESSERTS
@@ -275,6 +311,7 @@ const products = [
       description: "",
       category: { _id: "9a6c046de3d64d7cb079118938b27635", name: "Desserts" },
       price: 3.5,
+      image: ""
     },
     {
       _id: "820cf5a63ac945108ba359bf63ed8ce4",
@@ -282,6 +319,7 @@ const products = [
       description: "",
       category: { _id: "9a6c046de3d64d7cb079118938b27635", name: "Desserts" },
       price: 3.5,
+      image: ""
     },
     {
       _id: "13e23f7618a741f8acfefe2f4f455f28",
@@ -289,6 +327,7 @@ const products = [
       description: "",
       category: { _id: "9a6c046de3d64d7cb079118938b27635", name: "Desserts" },
       price: 3.5,
+      image: ""
     },
 //DRINKS
     {
@@ -298,6 +337,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "1bf350e7b446492fb7d070539a030a8e",
@@ -306,6 +346,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "b708826b002f4b039bbd2e0d7ba41de0",
@@ -314,6 +355,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "def147a200f14b019ccf728f2eb2e99b",
@@ -322,6 +364,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "aa286198c7ec41699be0219551d0927a",
@@ -330,6 +373,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "5a36683fd835472da0dd0b65f9b50208",
@@ -338,6 +382,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "b8cdc3234c1c46988cdd536899ce5647",
@@ -346,6 +391,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 8.00,
+      image: ""
     },
     {
       _id: "b517787f8b4b4743b83d52c855da75db",
@@ -354,6 +400,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "e98251fb7824478e933a66d6d9187e05",
@@ -362,6 +409,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "2cc5c6def184461aa66e21f9a1020c17",
@@ -370,6 +418,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "cocktails"},
       price: 9.00,
+      image: ""
     },
     {
       _id: "3eab0a5cd6c745748d202c4083299f1c",
@@ -378,6 +427,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "non-alcoholic"},
       price: 2.99,
+      image: ""
     },
     {
       _id: "0dd6b05426614cfdaa32696a2015a12c",
@@ -386,6 +436,7 @@ const products = [
       category: { _id: "ea82990323bc418f9aaa86de505d94c2", name: "Drinks" },
       subcategory: { _id: "", name: "non-alcoholic"},
       price: 2.99,
+      image: ""
     },
   ];
 

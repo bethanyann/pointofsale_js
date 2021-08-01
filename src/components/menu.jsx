@@ -30,11 +30,7 @@ class Menu extends Component {
     //Event Handlers
     handleCategorySelect = (category) => {
         //take the chosen category and filter the products and then update the products component
-        //this.setState({selectedCategory: category, currentPage: 1})
-        //console.log('category selected: ' + category + 'category id: ' + category._id)
         this.setState({ selectedCategory: category })
-
-        //console.log('selected category: ' + this.state.selectedCategory);
     }
 
     handlePageChange = () => {
@@ -48,7 +44,9 @@ class Menu extends Component {
             this.setState({productDetailsVisible : visible, selectedProduct : product});
     }
 
-
+    // handleAddProduct = (orderProduct) => {
+    //     console.log("product to add to the order:" + JSON.stringify(orderProduct));
+    // }
     //get data for the page loaded
     getProductData = () => {
         const {
@@ -67,7 +65,7 @@ class Menu extends Component {
     render() { 
         const {length: productsCount} = this.state.products;
         if(productsCount === 0) return <p> No products found for this category. </p>
-
+        
         const {totalProductCount, data} = this.getProductData();
 
         return ( 
@@ -88,7 +86,8 @@ class Menu extends Component {
                     />
                     <ProductDetails
                         visible={this.state.productDetailsVisible}
-                        selectedProduct={this.state.selectedProduct}>
+                        selectedProduct={this.state.selectedProduct}
+                        addProduct={this.props.addProduct}>
                     </ProductDetails>
                 </Row>
             </div>

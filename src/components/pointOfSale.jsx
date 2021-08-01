@@ -7,7 +7,14 @@ import Col from 'react-bootstrap/Col';
 
 //refactor the bootstrap component import statements
 class PointOfSale extends Component {
-    state = {  }
+    state = { 
+        orderList: []
+     }
+
+     handleAddProduct = (orderProduct) => {
+        console.log("product to add to the order:" + JSON.stringify(orderProduct));
+    }
+
     render() { 
         return ( 
               <Container fluid>
@@ -17,8 +24,7 @@ class PointOfSale extends Component {
                             here's the order section
                         </Col>  
                         <Col sm={8} style={{ backgroundColor:"blueviolet", height:"800px"}}>
-                            <Menu />
-                            
+                            <Menu addProduct={this.handleAddProduct}/>
                         </Col>
                                        
                     </Row>  
