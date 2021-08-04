@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 //need css classes for this too
 class ProductDetails extends Component {
     
+    handleAddProductToOrder = (selectedProduct) => {
+        this.visibility = "hide";
+        addProduct(selectedProduct);
+    }
 
     render() { 
         const {visible, selectedProduct, addProduct} = this.props;
@@ -15,6 +19,8 @@ class ProductDetails extends Component {
 
         console.log("visible? " + visibility);
         console.log(selectedProduct);
+        //function to add product to cart and also close the modal
+
         return (
             <div id="flyoutMenu"
             className={visibility}>
@@ -37,7 +43,7 @@ class ProductDetails extends Component {
                 </Row>
                 <Row style={{textAlign:"center"}}>
                     <Col style={{position:"relative"}}>
-                      <Button style={{position:"absolute", bottom:0}} onClick={() => addProduct(selectedProduct)}>Add to Order</Button>
+                      <Button style={{position:"absolute", bottom:0}} onClick={() => handleAddProductToOrder(selectedProduct)}>Add to Order</Button>
                     </Col>
                 </Row>
               
