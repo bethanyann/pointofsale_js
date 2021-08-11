@@ -8,11 +8,11 @@ class ProductDetails extends Component {
     
     handleAddProductToOrder = (selectedProduct) => {
         this.visibility = "hide";
-        addProduct(selectedProduct);
+        this.props.addProduct(selectedProduct);
     }
 
     render() { 
-        const {visible, selectedProduct, addProduct} = this.props;
+        const {visible, selectedProduct} = this.props;
         if(!selectedProduct) return <p></p>
 
         let visibility = visible ? "show" : "hide";
@@ -26,9 +26,7 @@ class ProductDetails extends Component {
             className={visibility}>
                
                 <Row>
-                    {/* <Col sm={4} style={{backgroundColor:"white"}}> */}
-                      {/* <h2>selectedproductgoeshere</h2>
-                    </Col> */}
+                
                     <Col style={{ paddingTop: 30}}>
                         <img scr={selectedProduct.image}></img>
                        <h4 style={{textAlign:"center"}}>{selectedProduct.name}</h4> 
@@ -43,7 +41,7 @@ class ProductDetails extends Component {
                 </Row>
                 <Row style={{textAlign:"center"}}>
                     <Col style={{position:"relative"}}>
-                      <Button style={{position:"absolute", bottom:0}} onClick={() => handleAddProductToOrder(selectedProduct)}>Add to Order</Button>
+                      <Button style={{position:"absolute", bottom:0}} onClick={() => this.handleAddProductToOrder(selectedProduct)}>Add to Order</Button>
                     </Col>
                 </Row>
               

@@ -39,7 +39,7 @@ class Menu extends Component {
 
     handleProductSelect = (product) => {
             console.log("this product was clicked on:" + JSON.stringify(product));
-            const visible = this.state.productDetailsVisible ? false : true;
+            const visible = !this.state.productDetailsVisible ? true : false;
             //toggle the product menu here
             this.setState({productDetailsVisible : visible, selectedProduct : product});
     }

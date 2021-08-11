@@ -8,27 +8,34 @@ import Col from 'react-bootstrap/Col';
 //refactor the bootstrap component import statements
 class PointOfSale extends Component {
     state = { 
-        orderList: []
+        orderList: [],
      }
 
-     handleAddProduct = (orderProduct) => {
-        console.log("product to add to the order:" + JSON.stringify(orderProduct));
+     handleAddProduct = (newOrderProduct) => {
+        console.log("new order product: " + JSON.stringify(newOrderProduct));
+
+        let newOrderList = [...this.state.orderList, newOrderProduct];
+        console.log("neworderlist: "+ newOrderList)
+      
+        console.log("product to add to the order:" + JSON.stringify(newOrderList));
+        this.setState({orderList : newOrderList});
     }
+
 
     render() { 
         return ( 
               <Container fluid>
                     <Row style={{height: "600px"}}>
                         <Col sm={4} style={{backgroundColor:"chartreuse"}}>
-                            <Order />
-                            here's the order section
+                            <Order
+                                order={this.state.orderList}
+                            />
                         </Col>  
                         <Col sm={8} style={{ backgroundColor:"blueviolet", height:"800px"}}>
                             <Menu addProduct={this.handleAddProduct}/>
                         </Col>
                                        
                     </Row>  
-           
                </Container>                    
         );
     }
